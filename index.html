@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf8f1">
+  <meta name="description" content="Цветочный салон «Розмарин» в Бердске. Выберите букет, обсудите заказ с флористом или приходите на Ленина, 9а.">
+  <title>Розмарин — цветочный салон в Бердске</title>
+  <link rel="icon" href="assets/flower.svg">
+  <link rel="preload" href="assets/hero.webp" as="image">
+  <link rel="stylesheet" href="type.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="catalog.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body id="top">
+<svg class="defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<defs>
+  <symbol id="rose" viewBox="0 0 50 60"><g fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round"><path d="M24 30c1 9 2 18-1 28m2-14c-9-1-15-5-19-14 10 0 17 5 19 14Zm.5-5c3-8 10-12 19-13-4 9-10 14-19 13Zm-4-12C11 24 8 17 9 11c5-1 10 0 14 6M14 11c-1-4 1-7 5-9l8 2c3-2 7 0 9 3l-1 4c4-1 7 1 7 3-1 9-8 13-16 15-4 4-8 2-10-1"/><path d="M17 9c4-4 10-4 14 0m-12 3 8 7 7-7c-3-5-8-6-12-1l5 4 3-4m-17 4c1 7 6 12 13 14-1-7 2-12 8-15m-7 11c6-3 10-6 12-10M23 29l-4 4m7-4 5 2"/></g></symbol>
+  <symbol id="heart" viewBox="0 0 24 24"><path d="M20.7 4.9a5.5 5.5 0 0 0-7.8 0l-.9.9-.9-.9a5.5 5.5 0 0 0-7.8 7.8L12 21l8.7-8.3a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path d="M19.3 10c0 5.4-7.3 11.2-7.3 11.2S4.7 15.4 4.7 10a7.3 7.3 0 1 1 14.6 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path d="m7.8 3 2.5 5-2.4 2.5a14.6 14.6 0 0 0 5.6 5.6l2.5-2.4 5 2.5-.6 3.1c-.3 1.4-1.5 2-2.8 1.8A18.3 18.3 0 0 1 2.9 6.4C2.7 5 3.3 3.9 4.7 3.6Z"/></symbol>
+  <symbol id="menu" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></symbol>
+  <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12m0-12L6 18"/></symbol>
+  <symbol id="expand" viewBox="0 0 24 24"><path d="M4 9V4h5m6 0h5v5m0 6v5h-5m-6 0H4v-5"/></symbol>
+  <symbol id="bloom" viewBox="0 0 24 24"><path d="M12 8C4 0 1 9 8 11 0 13 5 21 10 15c-3 9 7 9 5 1 6 6 12-2 4-5 7-4 0-11-4-4 0-7-6-7-5 0"/><circle cx="12.5" cy="11.6" r="2.1"/></symbol>
+  <symbol id="send" viewBox="0 0 24 24"><path d="m3 10 18-7-4 18-5.6-5.7L8 18v-5l8-6-9 5Z"/></symbol>
+  <symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+</defs></svg>
+<a class="skip" href="#catalog">К каталогу букетов</a>
+<header class="header wrap">
+  <a class="brand" href="#top" aria-label="Розмарин, на главную"><svg aria-hidden="true"><use href="#rose"/></svg><span>Розмарин<small>Цветочный салон</small></span></a>
+  <nav class="mainnav" aria-label="Основная навигация"><a href="#catalog">Букеты</a><a href="#custom">Свой букет</a><a href="#delivery">Доставка</a><a href="#contacts">Контакты</a></nav>
+  <div class="head-actions"><a class="phone" aria-label="Позвонить в салон по номеру +7 913 910-20-24" href="tel:+79139102024"><svg class="ic"><use href="#phone"/></svg><span>+7 913 910-20-24</span></a><button class="iconbtn fav-head" data-saved aria-label="Избранные букеты"><svg class="ic"><use href="#heart"/></svg><span id="fav-count" hidden></span></button><button class="iconbtn menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav"><svg class="ic"><use href="#menu"/></svg></button></div>
+  <nav id="mobile-nav" class="mobile-nav" hidden aria-label="Меню"><a href="#catalog">Букеты</a><a href="#custom">Свой букет</a><a href="#delivery">Доставка</a><a href="#contacts">Контакты</a></nav>
+</header>
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+    <img class="hero-photo" src="assets/hero.webp" alt="Бордовые георгины и персиковые розы в букете с атласной лентой" fetchpriority="high" width="1923" height="818">
+    <div class="hero-content">
+      <div class="place"><svg class="ic"><use href="#pin"/></svg>Бердск, Ленина, 9а</div>
+      <h1 id="hero-title">Цветы<br><em>вместо слов</em></h1>
+      <p>Авторские букеты с доставкой по Бердску.<br>Для праздника и просто так.</p>
+      <div class="hero-actions"><a class="btn primary" href="#catalog">Выбрать букет</a><button class="textbtn" data-order>Написать флористу</button></div>
+    </div>
+    <button class="hero-zoom iconbtn" aria-label="Рассмотреть букет на обложке" data-zoom><svg class="ic"><use href="#expand"/></svg></button>
+  </section>
+  <div class="info-line wrap"><a href="https://yandex.ru/maps/org/rozmarin/36440959505/reviews/" target="_blank" rel="noopener"><span class="stars" aria-hidden="true">★</span><span>Отзывы на Яндекс Картах</span></a><i aria-hidden="true"></i><span>Букеты на заказ</span><i aria-hidden="true"></i><a href="#delivery">Доставка и самовывоз</a></div>
+  <section id="catalog" class="catalog wrap" aria-labelledby="catalog-title">
+    <div class="catalog-head"><h2 id="catalog-title">Коллекция букетов</h2><div class="filters" aria-label="Фильтр по палитре" id="filters"></div></div>
+    <div id="products" class="products"></div><p class="sr" id="catalog-status" role="status"></p>
+    <div class="catalog-foot"><button id="more" class="btn outline" hidden>Показать ещё</button><button class="textbtn" data-prices>Прайс салона</button></div>
+  </section>
+  <section id="custom" class="custom wrap"><div class="custom-image"><img id="palette-img" src="assets/blush.webp" alt="Референс букета в пудровых тонах" loading="lazy" width="724" height="724"></div><div class="custom-copy"><span class="place"><svg class="ic"><use href="#bloom"/></svg>Индивидуальный заказ</span><h2>Букет в вашей<br><em>палитре</em></h2><p>На иллюстрации — пример сочетания оттенков. Выберите палитру для будущего букета. Флорист подберёт цветы по сезону и вашему бюджету.</p><div id="swatches" aria-label="Палитра букета"></div><button id="palette-order" class="btn primary">Обсудить с флористом</button></div></section>
+  <section id="delivery" class="delivery wrap"><div class="delivery-title"><svg class="sprig" aria-hidden="true"><use href="#rose"/></svg><h2>Доставка<br><em>и самовывоз</em></h2></div><div class="questions">
+    <details open><summary>Как заказать букет?<svg class="ic"><use href="#plus"/></svg></summary><p>Выберите букет или расскажите флористу, какие цветы любите и на какую сумму рассчитываете. Вместе согласуем состав и стоимость.</p><button class="textbtn" data-order>Обсудить букет</button></details>
+    <details><summary>Как оформить доставку?<svg class="ic"><use href="#plus"/></svg></summary><p>Укажите адрес в Бердске и желаемую дату. Флорист уточнит удобное время, стоимость доставки и способ оплаты до подтверждения заказа.</p><button class="textbtn" data-delivery>Запросить доставку</button></details>
+    <details><summary>Где забрать заказ?<svg class="ic"><use href="#plus"/></svg></summary><p>В цветочном салоне на улице Ленина, 9а, на первом этаже. Согласуйте с флористом время, к которому нужен букет.</p><a class="textbtn" href="https://yandex.ru/maps/org/rozmarin/36440959505/" target="_blank" rel="noopener">Открыть на Яндекс Картах</a></details>
+  </div></section>
+  <section id="contacts" class="contacts"><div class="wrap contacts-in"><div><h2>Ждём вас<br><em>в салоне</em></h2><a class="map-link" href="https://yandex.ru/maps/org/rozmarin/36440959505/" target="_blank" rel="noopener"><svg class="ic"><use href="#pin"/></svg>Открыть на Яндекс Картах</a></div>
+  <div class="contact-block"><h3>Адрес</h3><p>Бердск, ул. Ленина, 9а<br>1 этаж</p><h3>Часы работы</h3><p>Пн–сб &nbsp; 09:00–21:00<br>Вс &nbsp; 10:00–20:00</p></div>
+  <div class="contact-block"><h3>Связаться</h3><p><a href="tel:+79139102024">+7 913 910-20-24</a><br><a href="mailto:mashk88@mail.ru">mashk88@mail.ru</a></p><div class="social"><a href="https://t.me/+79139102024" target="_blank" rel="noopener">Telegram</a><a href="https://vk.ru/rozmarin_berdsk" target="_blank" rel="noopener">ВКонтакте</a></div></div></div>
+  <footer class="wrap"><a class="footer-brand" href="#top">Розмарин</a><span>Цветочный салон в Бердске</span></footer></section>
+</main>
+<dialog id="modal" aria-labelledby="modal-title"><button class="iconbtn dialog-close" aria-label="Закрыть"><svg class="ic"><use href="#close"/></svg></button><div id="modal-body"></div></dialog>
+</body></html>
